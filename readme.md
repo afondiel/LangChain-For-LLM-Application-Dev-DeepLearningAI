@@ -34,7 +34,7 @@ _ = load_dotenv(find_dotenv()) # read local .env file
 openai.api_key = os.environ['OPENAI_API_KEY']
 ```
 
-- Open API call 
+- OpenAI API call 
 
 ```python
 def get_completion(prompt, model="gpt-3.5-turbo"):
