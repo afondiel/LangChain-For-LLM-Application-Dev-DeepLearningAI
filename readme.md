@@ -7,14 +7,14 @@ Crash course on LangChain for LLM Application Developement by [DeepLearning.AI](
 
 ## Course Plan
 
-- [Lesson0: Introduction](./l0-introduction.md)
-- [Lesson1: Model Prompt & Parsers](./l1-model-prompts-parsers.md)
-- [Lesson2: Memory](./l2-memory.md)
-- [Lesson3: Chains](./l3-chains.md)
-- [Lesson4: Question & Answer](./l4-Q&A.md)
-- [Lesson5: Evaluation](./l5-evaluation.md)
-- [Lesson6: Agents](./l6-agents.md)
-- [Conclusion](./conclusion.md)
+- [Lesson0: Introduction](#)
+- [Lesson1: Model Prompts, Parsers](#)
+- [Lesson2: Memory](#)
+- [Lesson3: Chains](#)
+- [Lesson4: Question & Answer](#)
+- [Lesson5: Evaluation](#)
+- [Lesson6: Agents](#)
+- [Conclusion](#)
 
 > All notebook examples are available in the [lab](./lab/) folder.
 
