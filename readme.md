@@ -8,7 +8,7 @@ Crash course on LangChain for LLM Application Developement by [DeepLearning.AI](
 ## Course Plan
 
 - [Lesson0: Introduction](#)
-- [Lesson1: Model Prompts, Parsers](#)
+- [Lesson1: Models, Prompts and Parsers](#)
 - [Lesson2: Memory](#)
 - [Lesson3: Chains](#)
 - [Lesson4: Question & Answer](#)
@@ -21,12 +21,37 @@ Crash course on LangChain for LLM Application Developement by [DeepLearning.AI](
 
 ## Setup & Dependencies
 
+Setup & import your openai key  : 
+
 - [OpenAI Key](https://platform.openai.com/account/api-keys)
 
+```python
+import os
+import openai
 
+from dotenv import load_dotenv, find_dotenv
+_ = load_dotenv(find_dotenv()) # read local .env file
+openai.api_key = os.environ['OPENAI_API_KEY']
+```
+
+- Open API call 
+
+```python
+def get_completion(prompt, model="gpt-3.5-turbo"):
+    messages = [{"role": "user", "content": prompt}]
+    response = openai.ChatCompletion.create(
+        model=model,
+        messages=messages,
+        temperature=0, 
+    )
+    return response.choices[0].message["content"]
+```
 ## References
 
 Main Course : 
+- https://learn.deeplearning.ai/langchain/lesson/1/introduction
+
+LangChain resources : 
 - https://learn.deeplearning.ai/langchain/lesson/1/introduction
 
 Others short Free Courses available on DeepLearning.AI : 
